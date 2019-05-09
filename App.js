@@ -1,11 +1,17 @@
 import React from 'react';
 import { StyleSheet, Text, View } from 'react-native';
+// my custom components
+import Timer from './components/Timer'
+import Menu from './components/Menu'
+
 
 export default class App extends React.Component {
   render() {
     return (
       <View style={styles.container}>
-        <Text>Open up App.js to start working on your app!</Text>
+        <Timer style={styles.playerOne}/>
+        <Menu style={styles.menu}/>
+        <Timer style={styles.playerTwo}/>
       </View>
     );
   }
